@@ -15,6 +15,7 @@
 		2CBBC3CD20B160EC00B879CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBC3CC20B160EC00B879CD /* Assets.xcassets */; };
 		2CBBC3D020B160EC00B879CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBC3CE20B160EC00B879CD /* LaunchScreen.storyboard */; };
 		2CBBC3E620B1A77900B879CD /* AutoresizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC3E520B1A77900B879CD /* AutoresizeCell.m */; };
+		2CBBC3E920B1A85100B879CD /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC3E820B1A85100B879CD /* DataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		2CBBC3D120B160EC00B879CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBBC3E420B1A77900B879CD /* AutoresizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoresizeCell.h; sourceTree = "<group>"; };
 		2CBBC3E520B1A77900B879CD /* AutoresizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoresizeCell.m; sourceTree = "<group>"; };
+		2CBBC3E720B1A85100B879CD /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModel.h; path = Model/DataModel.h; sourceTree = "<group>"; };
+		2CBBC3E820B1A85100B879CD /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModel.m; path = Model/DataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		2CBBC3E320B1A74400B879CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2CBBC3E720B1A85100B879CD /* DataModel.h */,
+				2CBBC3E820B1A85100B879CD /* DataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				2CBBC3E620B1A77900B879CD /* AutoresizeCell.m in Sources */,
 				2CBBC3BF20B160EC00B879CD /* main.m in Sources */,
 				2CBBC3CB20B160EC00B879CD /* AdaptiveTableview.xcdatamodeld in Sources */,
+				2CBBC3E920B1A85100B879CD /* DataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
