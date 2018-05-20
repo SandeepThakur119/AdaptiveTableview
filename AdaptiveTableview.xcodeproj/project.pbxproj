@@ -14,6 +14,7 @@
 		2CBBC3CB20B160EC00B879CD /* AdaptiveTableview.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC3C920B160EC00B879CD /* AdaptiveTableview.xcdatamodeld */; };
 		2CBBC3CD20B160EC00B879CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBC3CC20B160EC00B879CD /* Assets.xcassets */; };
 		2CBBC3D020B160EC00B879CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBC3CE20B160EC00B879CD /* LaunchScreen.storyboard */; };
+		2CBBC3E620B1A77900B879CD /* AutoresizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC3E520B1A77900B879CD /* AutoresizeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +22,15 @@
 		2CBBC3BE20B160EC00B879CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CBBC3C020B160EC00B879CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CBBC3C120B160EC00B879CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CBBC3C320B160EC00B879CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2CBBC3C420B160EC00B879CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2CBBC3C320B160EC00B879CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controller/ViewController.h; sourceTree = "<group>"; };
+		2CBBC3C420B160EC00B879CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controller/ViewController.m; sourceTree = "<group>"; };
 		2CBBC3C720B160EC00B879CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CBBC3CA20B160EC00B879CD /* AdaptiveTableview.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdaptiveTableview.xcdatamodel; sourceTree = "<group>"; };
 		2CBBC3CC20B160EC00B879CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBBC3CF20B160EC00B879CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBBC3D120B160EC00B879CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CBBC3E420B1A77900B879CD /* AutoresizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoresizeCell.h; sourceTree = "<group>"; };
+		2CBBC3E520B1A77900B879CD /* AutoresizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoresizeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +63,11 @@
 		2CBBC3BC20B160EC00B879CD /* AdaptiveTableview */ = {
 			isa = PBXGroup;
 			children = (
+				2CBBC3E320B1A74400B879CD /* Model */,
+				2CBBC3E220B1A73E00B879CD /* View */,
+				2CBBC3E120B1A73300B879CD /* Controller */,
 				2CBBC3C020B160EC00B879CD /* AppDelegate.h */,
 				2CBBC3C120B160EC00B879CD /* AppDelegate.m */,
-				2CBBC3C320B160EC00B879CD /* ViewController.h */,
-				2CBBC3C420B160EC00B879CD /* ViewController.m */,
 				2CBBC3C620B160EC00B879CD /* Main.storyboard */,
 				2CBBC3CC20B160EC00B879CD /* Assets.xcassets */,
 				2CBBC3CE20B160EC00B879CD /* LaunchScreen.storyboard */,
@@ -80,6 +84,31 @@
 				2CBBC3BE20B160EC00B879CD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CBBC3E120B1A73300B879CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBC3C320B160EC00B879CD /* ViewController.h */,
+				2CBBC3C420B160EC00B879CD /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2CBBC3E220B1A73E00B879CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBC3E420B1A77900B879CD /* AutoresizeCell.h */,
+				2CBBC3E520B1A77900B879CD /* AutoresizeCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CBBC3E320B1A74400B879CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +184,7 @@
 			files = (
 				2CBBC3C520B160EC00B879CD /* ViewController.m in Sources */,
 				2CBBC3C220B160EC00B879CD /* AppDelegate.m in Sources */,
+				2CBBC3E620B1A77900B879CD /* AutoresizeCell.m in Sources */,
 				2CBBC3BF20B160EC00B879CD /* main.m in Sources */,
 				2CBBC3CB20B160EC00B879CD /* AdaptiveTableview.xcdatamodeld in Sources */,
 			);
@@ -313,6 +343,7 @@
 				2CBBC3D620B160EC00B879CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
