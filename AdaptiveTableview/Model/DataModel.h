@@ -12,5 +12,4 @@
 @property(nonatomic,strong) NSString *titleOfRow;
 @property(nonatomic,strong) NSString *imageURL;
 @property(nonatomic,strong)NSString *detailedDescription;
-
 @end

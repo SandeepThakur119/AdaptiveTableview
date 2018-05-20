@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>{
+#import "APIRestClient.h"
+#import "APIRestClient.h"
+@interface ViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,NetworkOpeationCompleted>{
     IBOutlet UITableView *adaptiveTableView;
-    NSMutableArray *arrayOfContent;
+    IBOutlet UIActivityIndicatorView *activityView;
+    NSArray *arrayOfContent;
+    APIRestClient *restClient;
 }
-
+-(IBAction)refreshUI:(id)sender;
 
 @end
 
