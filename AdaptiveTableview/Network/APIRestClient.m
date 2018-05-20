@@ -67,10 +67,13 @@
 {
     NSString *jsonString = [[NSString alloc] initWithData:receivedData encoding:encoding];
     NSError *error;
-    NSData *dutf8 = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:dutf8 options:NSJSONReadingMutableContainers error:&error];
-    [self getArrayFromJson:[dict dictionaryByReplacingNullsWithBlanks]];
-    NSLog(@"%@", dict);
+    NSData *convertedData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *convertedDictionary = [NSJSONSerialization JSONObjectWithData:convertedData options:NSJSONReadingMutableContainers error:&error];
+    if (convertedDictionary) {
+        [self getArrayFromJson:[convertedDictionary dictionaryByReplacingNullsWithBlanks]];
+    }
+    
+    NSLog(@"%@", convertedDictionary);
 }
 - (BOOL)connection:(NSURLConnection *)connection
 canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace
