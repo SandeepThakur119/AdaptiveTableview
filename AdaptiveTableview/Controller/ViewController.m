@@ -16,7 +16,7 @@
 @end
 
 @implementation ViewController
-
+@synthesize adaptiveTableView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     adaptiveTableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, adaptiveTableView.bounds.size.width, 0.01f)];

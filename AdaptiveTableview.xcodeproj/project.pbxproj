@@ -21,7 +21,19 @@
 		2CBBC3F420B1C92900B879CD /* NSMutableArray+StripNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC3F320B1C92900B879CD /* NSMutableArray+StripNulls.m */; };
 		2CBBC3F720B1C9AB00B879CD /* NSDictionary+Deepcopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC3F620B1C9AB00B879CD /* NSDictionary+Deepcopy.m */; };
 		2CBBC3F920B1E50A00B879CD /* image-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBC3F820B1E50A00B879CD /* image-placeholder.jpg */; };
+		2CBBC40A20B2017F00B879CD /* AdaptiveTableviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC40920B2017F00B879CD /* AdaptiveTableviewTests.m */; };
+		2CBBC41220B2047500B879CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBBC3FF20B1FE9700B879CD /* XCTest.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CBBC40C20B2017F00B879CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CBBC3B220B160EC00B879CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CBBC3B920B160EC00B879CD;
+			remoteInfo = AdaptiveTableview;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2CBBC3BA20B160EC00B879CD /* AdaptiveTableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveTableview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +60,10 @@
 		2CBBC3F520B1C9AB00B879CD /* NSDictionary+Deepcopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Deepcopy.h"; path = "Utility/NSDictionary+Deepcopy.h"; sourceTree = "<group>"; };
 		2CBBC3F620B1C9AB00B879CD /* NSDictionary+Deepcopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Deepcopy.m"; path = "Utility/NSDictionary+Deepcopy.m"; sourceTree = "<group>"; };
 		2CBBC3F820B1E50A00B879CD /* image-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-placeholder.jpg"; sourceTree = "<group>"; };
+		2CBBC3FF20B1FE9700B879CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2CBBC40720B2017F00B879CD /* AdaptiveTableviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveTableviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBBC40920B2017F00B879CD /* AdaptiveTableviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdaptiveTableviewTests.m; sourceTree = "<group>"; };
+		2CBBC40B20B2017F00B879CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CBBC40420B2017F00B879CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBBC41220B2047500B879CD /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				2CBBC3BC20B160EC00B879CD /* AdaptiveTableview */,
+				2CBBC40820B2017F00B879CD /* AdaptiveTableviewTests */,
 				2CBBC3BB20B160EC00B879CD /* Products */,
+				2CBBC3FE20B1FE9700B879CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				2CBBC3BA20B160EC00B879CD /* AdaptiveTableview.app */,
+				2CBBC40720B2017F00B879CD /* AdaptiveTableviewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +107,7 @@
 		2CBBC3BC20B160EC00B879CD /* AdaptiveTableview */ = {
 			isa = PBXGroup;
 			children = (
+				2CBBC3FB20B1FDC800B879CD /* TestCase */,
 				2CBBC3EE20B1C8AA00B879CD /* Utility */,
 				2CBBC3ED20B1A97700B879CD /* Network */,
 				2CBBC3E320B1A74400B879CD /* Model */,
@@ -155,6 +183,30 @@
 			name = Utility;
 			sourceTree = "<group>";
 		};
+		2CBBC3FB20B1FDC800B879CD /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TestCase;
+			sourceTree = "<group>";
+		};
+		2CBBC3FE20B1FE9700B879CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBC3FF20B1FE9700B879CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CBBC40820B2017F00B879CD /* AdaptiveTableviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBC40920B2017F00B879CD /* AdaptiveTableviewTests.m */,
+				2CBBC40B20B2017F00B879CD /* Info.plist */,
+			);
+			path = AdaptiveTableviewTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +227,24 @@
 			productReference = 2CBBC3BA20B160EC00B879CD /* AdaptiveTableview.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2CBBC40620B2017F00B879CD /* AdaptiveTableviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBBC40E20B2017F00B879CD /* Build configuration list for PBXNativeTarget "AdaptiveTableviewTests" */;
+			buildPhases = (
+				2CBBC40320B2017F00B879CD /* Sources */,
+				2CBBC40420B2017F00B879CD /* Frameworks */,
+				2CBBC40520B2017F00B879CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CBBC40D20B2017F00B879CD /* PBXTargetDependency */,
+			);
+			name = AdaptiveTableviewTests;
+			productName = AdaptiveTableviewTests;
+			productReference = 2CBBC40720B2017F00B879CD /* AdaptiveTableviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,6 +257,11 @@
 					2CBBC3B920B160EC00B879CD = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					2CBBC40620B2017F00B879CD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2CBBC3B920B160EC00B879CD;
 					};
 				};
 			};
@@ -204,6 +279,7 @@
 			projectRoot = "";
 			targets = (
 				2CBBC3B920B160EC00B879CD /* AdaptiveTableview */,
+				2CBBC40620B2017F00B879CD /* AdaptiveTableviewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +293,13 @@
 				2CBBC3CD20B160EC00B879CD /* Assets.xcassets in Resources */,
 				2CBBC3F920B1E50A00B879CD /* image-placeholder.jpg in Resources */,
 				2CBBC3C820B160EC00B879CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBBC40520B2017F00B879CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +323,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CBBC40320B2017F00B879CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBBC40A20B2017F00B879CD /* AdaptiveTableviewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CBBC40D20B2017F00B879CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CBBC3B920B160EC00B879CD /* AdaptiveTableview */;
+			targetProxy = 2CBBC40C20B2017F00B879CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2CBBC3C620B160EC00B879CD /* Main.storyboard */ = {
@@ -374,6 +473,30 @@
 			};
 			name = Release;
 		};
+		2CBBC40F20B2017F00B879CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AdaptiveTableviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tt.AdaptiveTableviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdaptiveTableview.app/AdaptiveTableview";
+			};
+			name = Debug;
+		};
+		2CBBC41020B2017F00B879CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AdaptiveTableviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tt.AdaptiveTableviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdaptiveTableview.app/AdaptiveTableview";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -394,6 +517,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2CBBC40E20B2017F00B879CD /* Build configuration list for PBXNativeTarget "AdaptiveTableviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBBC40F20B2017F00B879CD /* Debug */,
+				2CBBC41020B2017F00B879CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

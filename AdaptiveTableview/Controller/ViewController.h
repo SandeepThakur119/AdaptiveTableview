@@ -15,6 +15,7 @@
     NSArray *arrayOfContent;
     APIRestClient *restClient;
 }
+@property(nonatomic,strong)IBOutlet UITableView *adaptiveTableView;
 -(IBAction)refreshUI:(id)sender;
 
 @end
